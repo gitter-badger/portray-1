@@ -120,6 +120,9 @@ def on_github_pages(
         - *force*: Force the push to the repository.
         - *ignore_version*: Ignore check that build is not being deployed with an old version.
     """
+    import pdb
+
+    pdb.set_trace()
     directory = directory if directory else os.getcwd()
     project_config = project_configuration(directory, config_file)
     with render.documentation_in_temp_folder(project_config):
